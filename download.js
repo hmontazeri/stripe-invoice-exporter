@@ -17,19 +17,12 @@ const getPdf = async (invoice) => {
   return pdf;
 };
 
-invoices.forEach(async (invoice, index) => {
-  const pdf = await getPdf(invoice);
-  const pdfFile = `./invoices/${invoice}.pdf`;
-  setTimeout(async () => {
-    await download(pdf, pdfFile);
-  }, 300 * index);
-});
-
 /**
  * Download a resource from `url` to `dest`.
  * @param {string} url - Valid URL to attempt download of resource
  * @param {string} dest - Valid path to save the file.
  * @returns {Promise<void>} - Returns asynchronously when successfully completed download
+ * original: https://stackoverflow.com/a/62786397
  */
 function download(url, dest) {
   return new Promise((resolve, reject) => {
@@ -63,3 +56,11 @@ function download(url, dest) {
     });
   });
 }
+
+invoices.forEach(async (invoice, index) => {
+  const pdf = await getPdf(invoice);
+  const pdfFile = `./invoices/${invoice}.pdf`;
+  setTimeout(async () => {
+    await download(pdf, pdfFile);
+  }, 300 * index);
+});
