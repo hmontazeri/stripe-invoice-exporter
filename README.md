@@ -1,4 +1,4 @@
-# Stripe Invoice Exporter
+# Stripe Invoice Exporter (Node)
 
 Download all your Stripe PDF invoices in bulk.
 
