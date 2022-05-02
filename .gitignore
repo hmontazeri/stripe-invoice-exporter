@@ -1,5 +1,4 @@
 /vendor/
-/invoices/
 !/invoices/.gitignore
 /composer.lock
 node_modules/
