@@ -1,0 +1,35 @@
+{
+  "name": "stripe-invoice-exporter",
+  "version": "1.0.0",
+  "description": "Download all your Stripe PDF invoices in bulk.",
+  "main": "download.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "call-bind": "^1.0.2",
+    "function-bind": "^1.1.1",
+    "get-intrinsic": "^1.1.1",
+    "has": "^1.0.3",
+    "has-symbols": "^1.0.3",
+    "object-inspect": "^1.12.0",
+    "qs": "^6.10.3",
+    "side-channel": "^1.0.4",
+    "stripe": "^8.219.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node download.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmontazeri/stripe-invoice-exporter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hmontazeri/stripe-invoice-exporter/issues"
+  },
+  "homepage": "https://github.com/hmontazeri/stripe-invoice-exporter#readme"
+}

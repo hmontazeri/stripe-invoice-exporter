@@ -2,3 +2,6 @@
 /invoices/
 !/invoices/.gitignore
 /composer.lock
+node_modules/
+Rechnung*
+.DS_Store
